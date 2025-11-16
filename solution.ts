@@ -37,3 +37,15 @@ class Person {
     return `'Name: ${this.name}, Age: ${this.age}'`
   }
 }
+
+
+
+// ! Problem-4
+type ProblemFourType = {
+  title: string;
+  rating: number;
+}
+
+const filterByRating = (arr:ProblemFourType[]): ProblemFourType[] => {
+ return arr.filter(item=> item.rating >= 4)
+}
