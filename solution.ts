@@ -13,6 +13,12 @@ const formatValue = (value: string | number | boolean) => {
   }
 }
 
-console.log(formatValue('hello'));
-console.log(formatValue(5));
-console.log(formatValue(true));
+// ! Problem-2
+const getLength = (value: string | any[]) => {
+  if (typeof value === "string") {
+    return value.length
+  }
+  else if(Array.isArray(value)) {
+    return value.length
+  }
+}
