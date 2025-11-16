@@ -61,3 +61,15 @@ type ProblemFiveType = {
 const filterActiveUsers = (arr: ProblemFiveType[]):ProblemFiveType[] => {
   return arr.filter(user=> user.isActive === true)
 }
+
+// ! Problem-6
+interface Book {
+  title: string;
+  author: string;
+  publishedYear: number;
+  isAvailable: boolean;
+}
+
+const printBookDetails = (book: Book): void => {
+  console.log(`Title: ${book.title}, Author: ${book.author}, Published: ${book.publishedYear}, Available: ${book.isAvailable ? "Yes" : "No"}`);
+}
