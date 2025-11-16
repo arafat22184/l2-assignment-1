@@ -95,3 +95,34 @@ const getUniqueValues = <T extends string | number>(
 
   return newArr;
 };
+
+// ! Problem-8
+interface ProblemEightType {
+  name: string;
+  price: number;
+  quantity: number;
+  discount?: number;
+}
+
+const calculateTotalPrice = (products: ProblemEightType[]) => {
+  if (products.length === 0) {
+    return 0;
+  }
+  const totalProductPrice = products.reduce((accumulator, product,) => {
+   console.log(accumulator);
+    const totalPrice = product.price * product.quantity;
+    const afterDiscount = product.discount ? totalPrice - ((totalPrice / 100) * product.discount ) : totalPrice;
+    console.log(accumulator);
+    return accumulator + afterDiscount;
+ }, 0);
+  
+  return totalProductPrice;
+}
+
+const products = [
+  { name: 'Pen', price: 10, quantity: 2 },
+  { name: 'Notebook', price: 25, quantity: 3, discount: 10 },
+  { name: 'Bag', price: 50, quantity: 1, discount: 20 },
+];
+
+console.log(calculateTotalPrice(products));
