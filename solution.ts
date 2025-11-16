@@ -109,10 +109,8 @@ const calculateTotalPrice = (products: ProblemEightType[]) => {
     return 0;
   }
   const totalProductPrice = products.reduce((accumulator, product,) => {
-   console.log(accumulator);
     const totalPrice = product.price * product.quantity;
     const afterDiscount = product.discount ? totalPrice - ((totalPrice / 100) * product.discount ) : totalPrice;
-    console.log(accumulator);
     return accumulator + afterDiscount;
  }, 0);
   
