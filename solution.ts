@@ -73,3 +73,25 @@ interface Book {
 const printBookDetails = (book: Book): void => {
   console.log(`Title: ${book.title}, Author: ${book.author}, Published: ${book.publishedYear}, Available: ${book.isAvailable ? "Yes" : "No"}`);
 }
+
+// ! Problem-7
+const getUniqueValues = <T extends string | number>(
+  arr1: T[],
+  arr2: T[]
+): T[] => {
+  const newArr: T[] = [];
+
+  for (const element of arr1) {
+    if (!newArr.includes(element)) {
+      newArr.push(element)
+    }
+  }
+
+  for (const element of arr2) {
+    if (!newArr.includes(element)) {
+      newArr.push(element);
+    }
+  }
+
+  return newArr;
+};
