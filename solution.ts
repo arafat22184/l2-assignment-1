@@ -49,3 +49,15 @@ type ProblemFourType = {
 const filterByRating = (arr:ProblemFourType[]): ProblemFourType[] => {
  return arr.filter(item=> item.rating >= 4)
 }
+
+// ! Problem-5
+type ProblemFiveType = {
+  id: number;
+  name: string;
+  email: string;
+  isActive: boolean;
+}
+
+const filterActiveUsers = (arr: ProblemFiveType[]):ProblemFiveType[] => {
+  return arr.filter(user=> user.isActive === true)
+}
