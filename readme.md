@@ -1,10 +1,10 @@
-** Qestion-1
+** Qestion-1<br>
 ** What are some differences between interfaces and types in TypeScript?
 
 <p>
 টাইপস্ক্রিপ্টে Interface এবং Type মূলত ২ টাই টাইপ Define এর জন্য ব্যবহার করা হয়ে থাকে | তবে এদের মধ্যে কিছু পার্থক্য রয়েছে নিম্নে উদাহরণ সহ দেখানো হলো:
 
-<ul style={border: 2px #fff;}>
+<ul>
 <li>1. interface Redeclare করে বাড়ানো যায়
 মানে একই interface আবার লিখে নতুন property যোগ করা যায় | কিন্তু Type এর ক্ষেত্রে Redeclare করা যায় না |<br>
 Example:<br>
@@ -36,6 +36,7 @@ interface Person {<br>
 </ul>
 </p>
 <hr>
+** Qestion-2<br>
 ** Provide an example of using union and intersection types in TypeScript.
 
 1. Union<br>
