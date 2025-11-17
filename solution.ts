@@ -1,6 +1,3 @@
-//* Assignment-1
-
-//! Problem-1
 const formatValue = (value: string | number | boolean) => {
   if (typeof value === "string") {
     return value.toUpperCase();
@@ -14,7 +11,6 @@ const formatValue = (value: string | number | boolean) => {
 }
 
 
-// ! Problem-2
 const getLength = (value: string | any[]) => {
   if (typeof value === "string") {
     return value.length
@@ -25,7 +21,6 @@ const getLength = (value: string | any[]) => {
 }
 
 
-// ! Problem-3
 class Person {
   name: string;
   age: number;
@@ -40,7 +35,6 @@ class Person {
 }
 
 
-// ! Problem-4
 type ProblemFourType = {
   title: string;
   rating: number;
@@ -51,7 +45,6 @@ const filterByRating = (arr:ProblemFourType[]): ProblemFourType[] => {
 }
 
 
-// ! Problem-5
 type ProblemFiveType = {
   id: number;
   name: string;
@@ -71,7 +64,6 @@ const filterActiveUsers = (arr: ProblemFiveType[]): ProblemFiveType[] => {
 }
 
 
-// ! Problem-6
 interface Book {
   title: string;
   author: string;
@@ -87,7 +79,6 @@ const printBookDetails = (book: Book): void => {
 }
 
 
-// ! Problem-7
 const getUniqueValues = <T extends string | number>(
   arr1: T[],
   arr2: T[]
@@ -124,7 +115,6 @@ const getUniqueValues = <T extends string | number>(
 };
 
 
-// ! Problem-8
 interface ProblemEightType {
   name: string;
   price: number;
