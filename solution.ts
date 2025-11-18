@@ -1,4 +1,4 @@
-const formatValue = (value: string | number | boolean) => {
+const formatValue = (value: string | number | boolean): string | number | boolean | void => {
   if (typeof value === "string") {
     return value.toUpperCase();
   }
@@ -8,16 +8,18 @@ const formatValue = (value: string | number | boolean) => {
   else if (typeof value === "boolean") {
     return !value
   }
+  throw new Error("Invalid type");
 }
 
 
-const getLength = (value: string | any[]) => {
+const getLength = (value: string | any[]): number | void  => {
   if (typeof value === "string") {
     return value.length
   }
   else if(Array.isArray(value)) {
     return value.length
   }
+  throw new Error("Invalid type");
 }
 
 
@@ -29,7 +31,7 @@ class Person {
     this.age = age;
   }
 
-  getDetails() {
+  getDetails():string {
     return `'Name: ${this.name}, Age: ${this.age}'`
   }
 }
